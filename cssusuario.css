@@ -1,0 +1,96 @@
+*
+{
+	box-sizing: border-box;
+}
+
+body
+{
+	background-image: url('vectorwhite.png');
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-attachment: fixed;
+	background-size: cover;
+	font-family: 'Montserrat',sans-serif;
+	font-size: 14px;
+}
+
+
+.formulario
+{
+	width: 60%;
+	height: 100%;
+	margin: 0 auto;
+}
+
+.container
+{
+	width: 60%;
+	height: 100%;
+	margin: 0 auto;
+}
+
+section
+{
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+table
+{
+	width: 100%;
+	margin-bottom : .5em;
+    table-layout: fixed;
+
+}
+
+td, th 
+{
+	padding: .7em;
+	margin: 0;
+	border: 1px solid #cccccc;
+	text-align: center;
+	background-color: #fefefe;
+}
+
+th
+{
+	font-weight: bold;
+	background-color: #cccccc;
+}
+
+.usuario-invalido {
+    background-color: red;
+}
+
+.campo
+{
+	margin: 0;
+	padding-bottom: 1em;
+	width: 100%;
+	border: 1px solid #cccccc;
+	padding: .7em;
+	width: 100%;
+}
+
+.campo-medio
+{
+	display: inline-block;
+	padding-right: .5em;
+}
+
+.grupo
+{
+	width: 32%;
+	display: inline-block;
+	padding: 10px 0px;
+}
+
+.adicionar-usuario
+{
+    margin-top: 30px;
+}
+
+.campo-invalido
+{
+	border: 1px solid red;
+}

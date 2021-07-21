@@ -1,0 +1,240 @@
+/*layout tela de login para cadastrar usuário
+-------------------------------------------*/
+
+html,body{
+background-image: url('vectorwhite.png');
+background-repeat: no-repeat;
+background-position: top center;
+background-attachment: fixed;
+background-size: cover;
+/*background-color: #eeeeee;*/
+font-family: 'Montserrat',sans-serif;
+}
+
+.container{
+align-content: center;
+align-items: center;
+}
+
+.formulario,#cadastro,#login{
+position: absolute;
+top:0;
+bottom:0;
+left: 0;
+right: 0;
+margin: auto;
+padding: 10px;
+height: 310px;
+width: 310px;
+box-sizing: border-box;
+border-color: #cccccc; 
+border-width: 2px;
+border-style: solid;
+border-radius: 3px;
+background-color: #E6E6FA; /*rgb(0,0,0,0.5);*/ 
+box-shadow: 15px 15px 15px 0 rgb(0,0,44,0.5);
+
+-webkit-animation-duration: 1.5s;
+-webkit-animation-timing-function: ease;
+-webkit-animation-fill-mode: both;
+ 
+  animation-duration: 1.5s;
+  animation-timing-function: ease;
+  animation-fill-mode: both;
+}
+
+h1{
+	text-align: center;
+	font-size: 25px;
+	font-weight: bold;
+	margin: 0 auto;
+	background-color: #ffffff;
+	color: darkorange;
+	padding-top: 5px;
+	/*background: -webkit-linear-gradient(left, rgba(147,184,189,0) 0%,rgba(147,184,189,0.8) 20%,rgba(147,184,189,1) 53%,rgba(147,184,189,0.8) 79%,rgba(147,184,189,0) 100%); 
+	background: linear-gradient(left, rgba(147,184,189,0) 0%,rgba(147,184,189,0.8) 20%,rgba(147,184,189,1) 53%,rgba(147,184,189,0.8) 79%,rgba(147,184,189,0) 100%);*/ 
+
+}
+
+hr {
+    
+    height: 2px;
+    border: none;
+    background: -webkit-gradient(linear, 0 0, 100% 0, from(transparent), to(transparent), color-stop(50%, darkgrey));
+}
+
+/*hr{
+	border-color: darkorange;
+	height: 3px;
+	color: linear-gradient darkorange;
+}*/
+
+label{
+	margin-left: 5%;
+}
+
+.itens{
+	margin-left: 5%;
+	margin-right: 5%;
+	padding: 4px;
+	width: 90%;
+	border-color: #cccccc;
+	outline-color: #778899; 
+	border-style: solid;
+	border-radius: 3px;
+	cursor: pointer;
+}
+
+
+.logar{
+	width: 30%;
+	margin-left: 35%;
+	margin-right: 35%;
+	cursor: pointer;
+}
+
+.botao-enviar{
+	width: 30%;
+	margin-left: 35%;
+	margin-right: 35%;
+	cursor: pointer;
+}
+
+.link{
+	text-align: center;
+	font-size: 12px;
+	cursor: pointer;
+}
+
+.link a{
+	text-decoration: none;
+	color: #000000;
+}
+
+.link a:hover{
+	text-decoration: none;
+	color: #000088;
+	font-weight: bold;
+}
+
+.content p:first-child{
+  margin: 0px;
+}
+
+/* Efeito ao clicar no botão ( Ir para Login ) */
+#paracadastro:target ~ .content #cadastro,
+#paralogin:target ~ .content #login{
+  z-index: 2;
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
+ 
+  -webkit-animation-delay: .4s;
+  animation-delay: .4s;
+}
+
+/* Efeito ao clicar no botão ( Cadastre-se ) */
+#registro:target ~ .content #login,
+#paralogin:target ~ .content #cadastro{
+  -webkit-animation-name: fadeOutLeft;
+  animation-name: fadeOutLeft;
+
+  -webkit-animation-delay: .4s;
+  animation-delay: .4s;
+
+}
+
+/*fadeInLeft*/
+@-webkit-keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+  }
+}
+ 
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(0);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+ 
+/*fadeOutLeft*/
+@-webkit-keyframes fadeOutLeft {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateX(0);
+  }
+}
+ 
+@keyframes fadeOutLeft {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(0);
+  }
+}
+
+
+
+/*layout da tela de cadastro do usuário
+--------------------------------------*/
+
+.container2
+{
+	width: 60%;
+	height: 100%;
+	margin: 0 auto;
+}
+
+section
+{
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+table
+{
+	width: 100%;
+	margin-bottom : .5em;
+    table-layout: fixed;
+
+}
+
+td, th 
+{
+	padding: .7em;
+	margin: 0;
+	border: 1px solid #cccccc;
+	text-align: center;
+	background-color: #fefefe;
+}
+
+th
+{
+	font-weight: bold;
+	background-color: #cccccc;
+}
+
+/*ayout para mobile
+------------------*/
+
+@media screen and (max-width: 480px){
+	.formulario{
+		width: auto;
+		}
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE>
+
+<html lang="pt-br">
+
+	<head>
+
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width">
+	
+	<title>Login</title>
+		
+		<link rel="stylesheet" type="text/css" href="reset.css">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet ">
+
+	</head>
+
+	<body class="imagem">
+
+		<div class="container" >
+    		<a class="links" id="paracadastro"></a>
+    		<a class="links" id="paralogin"></a>
+     
+    		<div class="content">      
+     		<!--FORMULÁRIO DE LOGIN-->
+		    <div id="login">
+				<section class="container">
+					<form class="formulario" action="index.html" method=post>
+						<h1 class="titulo">Login<hr></h1>
+						<label>Usuário</label>
+						<br>
+						<input id=usuario class=itens type="text" name="Usuário" required placeholder="Informe o Apelido de Usuário"/>
+						<br>
+						<label>E-mail</label>
+						<br>
+						<input id=email class=itens type="email" name="Email" required placeholder="seuemail@dominio.com"/>
+						<br>
+						<label>Senha</label>
+						<br>		
+						<input id=senha class=itens type="password" name="Senha" required placeholder="Informe uma senha válida" maxlength="8"/>
+						<br>
+						<br>
+						<input id=entrar class=logar type="submit" name="Entrar" value="Entrar"/>
+						<br>
+						<hr>
+						<p class="link">Primeiro Acesso?  <a href="#paracadastro">Cadastre-se</a></p>
+						<br>
+						<p class="link"><a href="usuarios.html">Esqueci meu Login</a></p>					
+					</form>
+				</section>
+			</div>
+			<!--FORMULÁRIO DE CADASTRO-->
+		     <div id="cadastro">
+				<section class="container">
+					<form id="form-adiciona" class="formulario" action="usuarios.html" method=post>
+						<h1 class="titulo">Cadastre-se<hr></h1>
+						<label>Usuário</label>
+						<br>
+						<input id=usuario class=itens type="text" name="Usuário" required placeholder="Informe o Apelido de Usuário"/>
+						<br>
+						<label>E-mail</label>
+						<br>
+						<input id=email class=itens type="email" name="Email" required placeholder="seuemail@dominio.com"/>
+						<br>
+						<label>Senha</label>
+						<br>		
+						<input id=senha class=itens type="password" name="Senha" required placeholder="Informe uma senha válida" maxlength="8" />
+						<br>
+						<br>
+						<button id="adicionar-usuario" class="botao-enviar">Cadastrar</button>
+						<br>
+						<hr>
+						<p class="link">Já possui uma conta?  <a href="#paralogin">Ir para Login</a></p>
+						<br>
+						<p class="link"><a href="usuarios.html">Esqueci meu Login</a></p>
+						
+					</form>
+				</section>
+				<section class="container2">
+				<h1>Usuários Cadastrados</h1>
+				<hr>
+				<table>
+					<thead>
+						<tr>
+							<th>Usuário</th>
+							<th>E-mail</th>
+							<th>Senha</th>
+						</tr>
+					</thead>
+					<tbody id="tabela-usuarios">
+						<tr class="usuarios" id="dadosusuarios" >
+							<td class="usuario">Administrador</td>
+							<td class="email">administrador@adm.com.br</td>
+							<td class="senha">123456</td>
+						</tr>		
+					</tbody>
+				</table>
+			</section>
+				</div>
+			</div>
+		</div>
+				
+		<script src="login.js"></script>
+		<script src="usuarios.js"></script>
+
+	</body>
+</html> 

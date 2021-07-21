@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>Usuários</title>
+		<link rel="stylesheet" type="text/css" href="cssusuario.css">
+	</head>
+	<body>
+		<!-- Formulário para preencher os dados dos usuários... -->
+		<section class="formulario">
+		    <h1 id="titulo-form">Adicionar novo Usuário</h1>
+		    <hr>
+		    <form id="form-adiciona" action="index.html" method=post>
+				<label>Usuário</label>
+				<br>
+				<input id=usuario type="text" name="usuario" required=""/>
+				<br>
+				<label>E-mail</label>
+				<br>
+				<input id=email type="email" name="email" required=""/>
+				<br>
+				<label>Senha</label>
+				<br>		
+				<input id=senha type="password" name="senha" required=""/>
+				<br><br>
+				<button id="adicionar-usuario" class="botao-enviar">Cadastrar</button>
+				<br>
+			</form>
+		</section>
+
+		<main>
+			<section class="container">
+				<h1>Usuários Cadastrados</h1>
+				<hr>
+				<table>
+					<thead>
+						<tr>
+							<th>Usuário</th>
+							<th>E-mail</th>
+							<th>Senha</th>
+						</tr>
+					</thead>
+					<tbody id="tabela-usuarios">
+						<tr class="usuarios" id="dadosusuarios" >
+							<td class="usuario">Administrador</td>
+							<td class="email">administrador@adm.com.br</td>
+							<td class="senha">123456</td>
+						</tr>		
+					</tbody>
+				</table>
+			</section>
+		</main>
+
+		<script src="usuarios.js"></script>
+		<script src="login.js"></script>
+	</body>
+</html>
